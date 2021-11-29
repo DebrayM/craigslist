@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <header>
+        <div class='head_contain'>
+            <div id="div-p">
+                <p>CRAIGSLIST</p>
+                <!-- https://newyork.craigslist.org/ -->
+            </div>
+            <div class="post">
+                <a href="#"><div id="calendar"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar2-week" viewBox="0 0 16 16">
+                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H2z"/>
+                    <path d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V4zM11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+                  </svg>Event calendar</div></a>
+                <a href="#"><div id="posting">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-heading" viewBox="0 0 16 16">
+                        <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+                        <path d="M3 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm0-5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5v-1z"/>
+                      </svg>Create a posting</div></a>
+                <a href="#"><div id="account"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                  </svg>My account</div></a>
+            </div>
+            <select name="langue" id="langue">
+                <option value="en">english</option>
+                <option value="de">deutch</option>
+                <option value="es">espagnol</option>
+                <option value="fr">français</option>
+            </select>
+        </div>
+    <div class="bandeau">
+        <form action="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#cccccc" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg>
+            <label for="gsearch">what are you looking for ?</label>
+            <input type="search" id="gsearch" name ="search" placeholder="search craigslist">
+        </form>
+        <div>
+        <p id="libel">where ?</p>
+        <select name="localisation" id="local">
+            <option value="opt1">all</option>
+            <option value="opt2">manhattan</option>
+            <option value="opt2">brookling</option>
+            <option value="opt2">queens</option>
+            <option value="opt2">staten island</option>
+            <option value="opt2">new jersey</option>
+            <option value="opt2">long island</option>
+            <option value="opt2">westchester</option>
+            <option value="opt2">fairfield</option>
+        </select>
+        </div>
+    </div>
+    <div class="grid">
+        <div>
+            <a href="#">
+            <h2>Community</h2>
+            <img src="communauté.png" alt="communauté">
+            </a>
+        </div>
+        <div>
+            <a href="#">
+            <h2>Housing</h2>
+            <img src="logement.png" alt="logement">
+            </a>
+        </div>
+        <div>
+            <a href="#">
+            <h2>jobs</h2>
+            <img src="job.png" alt="job">
+            </a>
+        </div>
+        <div>
+            <a href="#">
+            <h2>services</h2>
+            <img src="Services.png" alt="services">
+            </a>
+        </div>
+        <div>
+            <a href="#">
+            <h2>for sale</h2>
+            <img src="Sans titre-1.png" alt="A vendre">
+            </a>
+        </div>
+        <div>
+            <a href="#">
+            <h2>discussion forums</h2>
+            <img src="discussion.png" alt="discussion">
+            </a>
+        </div>
+        <div>
+            <a href="#">
+            <h2>gigs</h2>
+            <img src="concert.png" alt="concert">
+            </a>
+        </div>
+        <div>
+            <a href="#">
+            <h2>resumes</h2>
+            <img src="reprendre.png" alt="reprendre">
+            </a>
+        </div>
+    </div>
+    </header>
+    <footer>
+        <ul>
+            <li><a href="#">craigslist appnew</a></li>
+            <li><a href="#">help, faq, abuse, lega</a></li>
+            <li><a href="#">avoid scams & fraud</a></li>
+            <li><a href="#">personal safety tips</a></li>
+            <li><a href="#">terms of use</a></li>
+            <li><a href="#">privacy policynew</a></li>
+            <li><a href="#">system status</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">about craigslist</a></li>
+            <li><a href="#">craigslist is hiring in sf</a></li>
+            <li><a href="#">craigslist open source</a></li>
+            <li><a href="#">craigslist blog</a></li>
+            <li><a href="#">best-of-craigslist</a></li>
+            <li><a href="#">"craigslist joe"</a></li>
+            <li><a href="#">"craig newmark philanthropies"</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">nearby cl</a></li>
+            <li><a href="#">us cities</a></li>
+            <li><a href="#">us states</a></li>
+            <li><a href="#">canada</a></li>
+            <li><a href="#">cl wordwide</a></li>
+        </ul>
+    </footer>
+    </div>
+</body>
+</html>

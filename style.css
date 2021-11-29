@@ -1,0 +1,229 @@
+:root{
+    --bg-bandeau:#78848d;
+    --color-text-blue:#0000ee;
+    --color-title:#cccccc;
+}
+
+body{
+    margin: 0;
+    background-color: var(--bg-bandeau);
+}
+.container{
+    height: 100vh;
+}
+header{
+    margin: 0;
+    position: relative;
+    height: 750px;
+    background-image: url('new-york.1468105.104.jpg');
+    background-repeat: no-repeat;
+}
+
+#div-p{
+    background: linear-gradient(var(--bg-bandeau) 20%, var(--color-title) 80%);
+    margin-top: 5px;
+    border-radius: 4px;
+}
+header p{
+    color: var(--color-text-blue);
+    padding: 5px;
+    margin: 0;
+}
+
+
+#langue{
+    margin-top: 5px;
+    font-size: 16px;
+    height: 28px;
+    color: var(--bg-bandeau);
+    overflow: hidden;  
+}
+.post_langue{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.post{
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.post a{
+    text-decoration: none;
+    color: var(--color-title);
+}
+.post a:hover{
+    text-decoration: none;
+    color: var(--color-text-blue);
+}
+#calendar svg{
+    padding-top: 4px;
+    padding-right: 4px;  
+}
+#posting svg{
+    padding-top: 4px;
+    padding-right: 4px;
+}
+#account svg{
+    padding-top: 4px;
+    padding-right: 4px;
+}
+.head_contain{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 5vh;
+    margin-right: 5vh;
+}
+.bandeau{
+    margin-top: 15vh;
+    margin-left: 10vh;
+    width: 80%;
+    height: 80px;
+    background-color: var(--bg-bandeau);
+    opacity: 0.8;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+label{
+    padding-right: 5px;
+    padding-left: 5px;
+    font-size: 16px;
+    color: var(--color-title);
+}
+input{
+    height: 28px;
+    width: 450px;
+    font-size: 16px;
+    color: var(--bg-bandeau);
+    padding: 2px 4px;
+    border-radius: 4px;
+    border:none;
+}
+#libel{
+    display: inline;
+    font-size: 16px;
+    color: var(--color-title);
+}
+#local{
+    height: 28px;
+    width: 200px;
+    font-size: 16px;
+    color: var(--bg-bandeau);
+    padding: 2px 4px;
+}
+
+footer {
+    margin: 0;
+    margin-left: 5vh;
+    margin-right: 5vh;
+    background-color: var(--bg-bandeau);
+    color:var(--color-title);
+    display: flex;
+    justify-content: space-between;
+}
+
+footer ul {
+    list-style: none;
+}
+footer ul li a{
+    text-decoration: none;
+    color: var(--color-title);
+}
+footer ul li a:hover{
+    text-decoration: none;
+    color: var(--color-text-blue);
+}
+
+.grid{
+    margin-right: 5vh;
+    margin-left: 5vh;
+    margin-top: 10vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto); 
+    background-color: var(--bg-bandeau);
+    opacity: 0.8;
+    border-radius: 20px;
+    padding-bottom: 10px;
+} 
+
+.grid a{
+    text-decoration: none;
+    color: var(--color-title);
+}
+.grid a:hover{
+    text-decoration: none;
+    color: var(--color-text-blue);
+}
+.grid h2{
+    text-align: center;
+}
+.grid div{
+    text-align: center;
+}
+.grid div img {
+    height: 100px;
+    width: 150px;
+    object-fit: contain;
+}
+
+/* ------------- */
+/* media query   */
+@media (max-width: 768px) {
+
+    header{
+        height: 250%;
+    }
+    .post{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2px;
+    }
+    .bandeau{
+        margin-top: 15vh;
+        width: 60%;
+        height: 180px;
+        margin-left: 5vh;
+        background-color: var(--bg-bandeau);
+        opacity: 0.8;
+        border-radius: 20px;
+        top: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        align-items: center;
+
+    }
+    
+.grid{
+    grid-template-columns: 1fr;
+} 
+
+label{
+    margin-bottom: 5px;
+}
+input{
+    height: 28px;
+    width: 300px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+}
